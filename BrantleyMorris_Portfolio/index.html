@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Brantley Morris</title>
+</head>
+
+<body>
+    <header> <!--Main Header, probably should be <header>-->
+        <h1>Brantley Morris</h1>
+
+        <nav>
+            <a id="aboutMeNav" href="#aboutMe">About Me</a> <!--May need to be an <a> so that it can link to later in the page-->
+
+            <a id="projectsNav" href="#projects">Projects</a>
+
+            <a id="contactNav" href="#contact">Contact</a>
+        </nav>  
+    </header>
+    
+    <div id="aboutMe"> <!--may call this main, for About Me-->
+        <h2>On a quest for why</h2>
+    
+        <img src="./assets/images/meAndClaire.jpeg" alt="Me and Claire" id="meAndClaire"> <!--add picture here (not really sure that this is professional)-->
+
+        <p>My first word was basketbasll. Which is quite ironic as I am terrible at the sport. My second word however was why. Which it a much better summation of my life.</p> <!--add stuff here-->
+        
+        <p>I have always been interested in how things work. Which lead me to my first love, Biology. Learning how living things function of the macro and micro scale was truely fasinating. The levels of organization and sturcutre present at all levels of the world around us is simply beautiful.</p>
+
+        <p>This love of structural systems is what first attracted me to programming. Learning about different programming languages and data sturctures have added a whole new level to my love of learning. Being part of an ever evolving industry means that I will be able to keep learning and exploring new ideas.</p>
+    </div>
+
+    <div id="projects"> <!--this is for projects-->
+        <section class="images"> <!--for project images, will be grid wrapped into columns-->
+            <img src="./assets/images/family.jpeg" alt="My Family" id="myFamily">
+            <img src="./assets/images/cabin.jpeg" alt="Cabin" id="cabin">
+            <img src="./assets/images/rockClimbing.jpeg" alt="Rock Climbing" id="rockClimbing"> 
+            <img src="./assets/images/blueHole.jpeg" alt="Blue Hole" id="blueHole">
+        </section>
+
+        <section class="descriptions"> <!--for project descriptions, will be set to show when corrisponding image is focused-->
+            <img src="./assets/images/Horiseon-Optimzation.png" alt="Optimization Project Code" id="horiseonCode">
+            <p>This project involved html optimization for search engine use.</p> <!--change to picture and discription of Horizeon project-->
+        </section>
+    </div>
+
+    <footer id="contact"> <!--this is for contact info-->
+        <p>Phone: <br/>(512) 433-9503</p>
+        <p>Email: <br/>brantleymorris@me.com</p>
+        <p>GitHub: <br/>brantleymorris</p>
+    </footer>
+</body>
+</html>
