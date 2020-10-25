@@ -1,0 +1,151 @@
+html {
+    font-size: 62.5%;
+    padding-bottom: 3rem;
+    background-color: dimgray; 
+}
+
+header {
+    background-color: rgb(71, 71, 161);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10rem;
+    align-items: center;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+}
+
+h1 {
+    color: burlywood;
+    font-size: 6rem;
+    width: 40rem;
+    border: black;
+    border-radius: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40rem;
+    font-size: 2rem;
+    background-color: burlywood;
+    border-radius: 1rem;
+}
+
+#aboutMeNav, #projectsNav, #contactNav {
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+#aboutMe {
+    background-color: darksalmon;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+}
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+#meAndClaire {
+    height: 200px;
+    width: 200px;
+    float: right;
+    border-radius: 3rem;
+}
+
+div p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: minmax(15rem, 30%) auto;
+    margin-bottom: 5rem;
+}
+
+.images {
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.images img {
+    flex: 0 1 15rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    height: 75px;
+    width: 75px;
+} 
+
+/*.descriptions .Test1, .Test2 {
+    display: none;
+}  will need to be changed to img when added to html */
+
+ /* #prompt {
+     display: show;
+ } will be changed later */
+
+.descriptions {
+    background-color: coral;
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+.descriptions p {
+    text-align: center;
+}
+
+#horiseonCode {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: darkcyan;
+    height: 50px;
+    border-radius: 10px;
+    padding-bottom: 0rem;
+}
+
+/* This is for using images as buttons to display information about future projects
+#myFamily:hover {
+    height: 100px;
+    width: 100px;
+}
+
+#myFamily:hover #prompt{
+    display: none;
+}
+
+#cabin:hover {
+    height: 100px;
+    width: 100px;
+}
+
+#rockClimbing:hover {
+    height: 100px;
+    width: 100px;
+}
+
+#blueHole:hover {
+    height: 100px;
+    width: 100px;
+} */
+
+@media screen and (max-width: 770px) { /* need to decide on max-width */
+    nav {
+        flex-direction: column;
+    }
+}
