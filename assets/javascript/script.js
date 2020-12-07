@@ -4,39 +4,40 @@
         {title: "Horizeon Optimization",
         description: "This project involved website optimization for search engine recognition.",
         image: "./assets/images/Horiseon-Optimzation.png",
-        deployedURL: "",
-        gitHubUrl: ""},
+        deployedURL: "https://brantleymorris.github.io/Horiseon_Optimization/",
+        gitHubUrl: "https://github.com/brantleymorris/Horiseon_Optimization"},
         {title: "Secure Password Generator",
         description: "This program generates a randomized password bases on user criteria.",
         image: "./assets/images/securePasswordGenerator.png",
-        deployedURL: "Test 1",
-        gitHubUrl: "Test 2"},
+        deployedURL: "https://brantleymorris.github.io/SecurePasswordGenerator/",
+        gitHubUrl: "https://github.com/brantleymorris/SecurePasswordGenerator"},
         {title: "Daily Planner",
         description: "This program creates a daily planner where the user can store tasks for the day. Each time frame is color coded so that the user knows which tasked need to be completed when.",
         image: "./assets/images/dailyPlanner.png",
-        deployedURL: "",
-        gitHubUrl: ""},
+        deployedURL: "https://brantleymorris.github.io/dailyPlanner/",
+        gitHubUrl: "https://brantleymorris.github.io/FrontEndQuiz/"},
         {title: "Front End Quiz",
         description: "This program contains a quiz over elements for front end design and it's uses.",
         image: "./assets/images/frontEndQuiz.png",
-        deployedURL: "",
-        gitHubUrl: ""},
+        deployedURL: "https://brantleymorris.github.io/FrontEndQuiz/",
+        gitHubUrl: "https://github.com/brantleymorris/FrontEndQuiz"},
         {title: "Weather Tracker",
         description: "This program present the current weather and 5 day forecast for the searched city.",
         image: "./assets/images/weatherTracker.png",
-        deployedURL: "",
-        gitHubUrl: ""},
+        deployedURL: "https://brantleymorris.github.io/Weather_Tracker/",
+        gitHubUrl: "https://github.com/brantleymorris/Weather_Tracker"},
         {title: "Covid Travel Companion",
         description: "For those who want to travel during CoVid-19, and want to make sure they are reasonalbe safe, we are here to help.",
         image: "./assets/images/covidHotelBooking.png",
-        deployedURL: "",
-        gitHubUrl: ""}
+        deployedURL: "https://brantleymorris.github.io/Covid_Hotel_Booking/",
+        gitHubUrl: "https://github.com/brantleymorris/Covid_Hotel_Booking"}
     ];
 
 // create functions
     // need a function to write project to div when image is clicked
     function displayProject (i) {
-        $(".descriptions").empty();
+        let target = $(".descriptions");
+        target.empty();
 
         var project = `
             <div class="container border border-dark">
@@ -63,7 +64,7 @@
                 </div>
             </div>
         `
-        $(".descriptions").append(project);
+        target.append(project);
         };
 
     // This function creates image buttons for projects when page is loaded
