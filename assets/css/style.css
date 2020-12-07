@@ -1,7 +1,15 @@
 html {
     font-size: 62.5%;
     padding-bottom: 3rem;
-    background-color: dimgray; 
+    height: 100%;
+}
+
+.bg {
+    background-image: url("../../assets/images/blueHole.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%; /* this had been cover, and the image wasn't fitting properly */
+    height: 100%;
 }
 
 header {
@@ -11,8 +19,8 @@ header {
     justify-content: space-around;
     height: 10rem;
     align-items: center;
-    margin-bottom: 5rem;
-    border-radius: 1rem;
+    margin-bottom: 50rem;
+    /* border-radius: 1rem; decided not to use this if using the fixed background */
 }
 
 h1 {
@@ -40,11 +48,12 @@ nav {
 
 #aboutMe {
     background-color: darksalmon;
-    margin-bottom: 5rem;
+    margin: 5rem;
     border-radius: 1rem;
 }
 h2 {
     font-size: 3rem;
+    text-align: center;
 }
 
 p {
@@ -56,6 +65,7 @@ p {
     width: 200px;
     float: right;
     border-radius: 3rem;
+    margin: 2rem;
 }
 
 div p {
@@ -66,7 +76,7 @@ div p {
 #projects {
     display: grid;
     grid-template-columns: minmax(15rem, 30%) auto;
-    margin-bottom: 5rem;
+    margin: 2rem;
 }
 
 .images {
@@ -75,6 +85,7 @@ div p {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 1rem;
+    margin-right: 1rem;
 }
 
 .images img {
@@ -97,10 +108,12 @@ div p {
     background-color: coral;
     border-radius: 1rem;
     padding: 10px;
+    margin-left: 1rem;
 }
 
 .descriptions p {
     text-align: center;
+    padding: 1rem;
 }
 
 #horiseonCode {
@@ -115,18 +128,14 @@ footer {
     justify-content: space-evenly;
     background-color: darkcyan;
     height: 50px;
-    border-radius: 10px;
-    padding-bottom: 0rem;
+    /* border-radius: 10px; decided not to use this with fixed bg image */
+    margin-bottom: -4rem;
 }
 
-/* This is for using images as buttons to display information about future projects
+/*This is for using images as buttons to display information about future projects*/
 #myFamily:hover {
     height: 100px;
     width: 100px;
-}
-
-#myFamily:hover #prompt{
-    display: none;
 }
 
 #cabin:hover {
@@ -142,7 +151,7 @@ footer {
 #blueHole:hover {
     height: 100px;
     width: 100px;
-} */
+}
 
 @media screen and (max-width: 770px) { /* need to decide on max-width */
     nav {
