@@ -14,7 +14,7 @@
         {title: "Daily Planner",
         description: "This program creates a daily planner where the user can store tasks for the day. Each time frame is color coded so that the user knows which tasked need to be completed when.",
         image: "./assets/images/dailyPlanner.png",
-        deployedURL: "https://brantleymorris.github.io/dailyPlanner/",
+        deployedURL: "https://brantleymorris.github.io/FrontEndQuiz/",
         gitHubUrl: "https://brantleymorris.github.io/FrontEndQuiz/"},
         {title: "Front End Quiz",
         description: "This program contains a quiz over elements for front end design and it's uses.",
@@ -41,25 +41,31 @@
 
         var project = `
             <div class="container border border-dark">
-                <h1>${projects[i].title}</h1>
+                <div class="row">
+                    <h1 class="title col-6">${projects[i].title}</h1>
+                    <img src="${projects[i].image}" class="col-6 img-fluid" style="mx-width:100%, height:auto">
+                </div>
 
                 <div class="row border border-dark">
-
-                    <div id="image" class="col-4 border border-dark">
-
-                        <img src="${projects[i].image}" class="img-fluid" style="mx-width:100%, height:auto">
-
-                        <div class="container border border-dark">
-                            <div id="links"class="row border border-dark">
-                                <p class="col-6">${projects[i].deployedURL}</p>
-                                <p class="col-6">${projects[i].gitHubUrl}</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <div id="products" class="col-8 border border-dark">
                         <p>${projects[i].description}</p>
                     </div>
+
+                    <div id="image" class="col-4 border border-dark">
+                        <div class="container border border-dark">
+                            <div id="links"class="row border border-dark">
+                                <a href="${projects[i].deployedURL}">
+                                    <p>Check it out!</p>
+                                </a>
+                                <a href="${projects[i].gitHubUrl}" class="col-6">
+                                    <img src="./assets/images/GitHub-Mark-64px.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                 </div>
             </div>
