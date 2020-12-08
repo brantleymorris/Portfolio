@@ -39,8 +39,8 @@
         let target = $(".descriptions");
         target.empty();
 
-        var project = `
-            <div class="container border border-dark">
+        var project = 
+        `<div class="container border border-dark">
                 <div class="row">
                     <h1 class="title col-6">${projects[i].title}</h1>
                     <img src="${projects[i].image}" class="col-6 img-fluid" style="mx-width:100%, height:auto">
@@ -56,7 +56,7 @@
                         <div class="container border border-dark">
                             <div id="links"class="row border border-dark">
                                 <a href="${projects[i].deployedURL}">
-                                    <p>Check it out!</p>
+                                    <p>Try it out!</p>
                                 </a>
                                 <a href="${projects[i].gitHubUrl}" class="col-6">
                                     <img src="./assets/images/GitHub-Mark-64px.png">
@@ -64,12 +64,9 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
-            </div>
-        `
+            </div>`
+
         target.append(project);
         };
 
@@ -78,13 +75,15 @@
         for (let i = 0; i < projects.length; i++) {
             var images = $(".images");
 
-            var imageButton = $("<img>").attr("src", projects[i].image).attr("id", projects[i].title);
-            // may need to add the on click here
-
+            var imageButton = $("<img>").attr("src", projects[i].image).attr("class", "imageButton").attr("id", i);
+           
             images.append(imageButton);
+
+            $(`#${i}`).on("click", function() {
+                displayProject(i)
+                });
             }
-    }
+    };
 
 // call functions - event listeners
 createImageButtons();
-displayProject(1);

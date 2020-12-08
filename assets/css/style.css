@@ -112,6 +112,10 @@ div p {
     padding: 1rem;
 }
 
+a {
+    color: black;
+}
+
 #horiseonCode {
     height: 200px;
     width: 200px;
