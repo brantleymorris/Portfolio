@@ -13,7 +13,7 @@ html {
 }
 
 header {
-    background-color: rgb(71, 71, 161);
+    background-color: darkcyan;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -24,7 +24,7 @@ header {
 }
 
 h1 {
-    color: burlywood;
+    color: darkslategray;
     font-size: 6rem;
     width: 40rem;
     border: black;
@@ -38,12 +38,14 @@ nav {
     width: 40rem;
     font-size: 2rem;
     background-color: burlywood;
+    color: darkslategray;
     border-radius: 1rem;
 }
 
 #aboutMeNav, #projectsNav, #contactNav {
     border-radius: 1rem;
     width: 10rem;
+    color: darkslategray;
 }
 
 #aboutMe {
@@ -97,11 +99,12 @@ div p {
 } 
 
 .title {
-    color: black;
+    color: darkslategray;
 }
 
 .descriptions {
     background-color: coral;
+    color: darkslategray;
     border-radius: 1rem;
     padding: 10px;
     margin-left: 1rem;
@@ -113,7 +116,7 @@ div p {
 }
 
 a {
-    color: black;
+    color: darkslategray;
 }
 
 #horiseonCode {
@@ -126,10 +129,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: darkcyan;
+    /*background-color: darkcyan;*/
     height: 50px;
-    /* border-radius: 10px; decided not to use this with fixed bg image */
-    margin-bottom: -4rem;
 }
 
 /*This is for using images as buttons to display information about future projects*/
