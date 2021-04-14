@@ -1,11 +1,17 @@
 // set variable
     // array of project objects to store data
     var projects = [
-        {title: "Horizeon Optimization",
-        description: "This project involved website optimization for search engine recognition.",
-        image: "./assets/images/Horiseon-Optimzation.png",
-        deployedURL: "https://brantleymorris.github.io/Horiseon_Optimization/",
-        gitHubUrl: "https://github.com/brantleymorris/Horiseon_Optimization"},
+        {title: "Google Book Search",
+        description: "With the power of React and MongoDB you will never loss track of your reading list again. Using the Google Books API find the exact book you want to read. Then save it for later. And when you finish a book delete it for your list.",
+        image: "./assets/images/BookSearch.png",
+        deployedUrl: "https://hidden-meadow-75616.herokuapp.com/",
+        gitHubURl: "https://github.com/brantleymorris/book_search"
+        },
+        {title: "QuizNode",
+        description: "Welcome to QuizNode! Create and Take quizzes. Using the React framework and a robust MongoDB this educational program makes it easy to make your own quizzes and take quizzes made by others.",
+        image: "./assets/images/QuizNode.png",
+        deployedUrl: "https://qu1znode.herokuapp.com/",
+        gitHubUrl: "https://github.com/Darrellfr3/Quiznode"},
         {title: "Secure Password Generator",
         description: "This program generates a randomized password bases on user criteria.",
         image: "./assets/images/securePasswordGenerator.png",
@@ -16,11 +22,6 @@
         image: "./assets/images/dailyPlanner.png",
         deployedURL: "https://brantleymorris.github.io/dailyPlanner/",
         gitHubUrl: "https://github.com/brantleymorris/dailyPlanner"},
-        {title: "Front End Quiz",
-        description: "This program contains a quiz over elements for front end design and it's uses.",
-        image: "./assets/images/frontEndQuiz.png",
-        deployedURL: "https://brantleymorris.github.io/FrontEndQuiz/",
-        gitHubUrl: "https://github.com/brantleymorris/FrontEndQuiz"},
         {title: "Weather Tracker",
         description: "This program present the current weather and 5 day forecast for the searched city.",
         image: "./assets/images/weatherTracker.png",
@@ -42,18 +43,13 @@
         deployedUrl: "https://fathomless-oasis-100030.herokuapp.com/",
         gitHubUrl: "https://github.com/brantleymorris/NoteTaker"
         },
-        {title: "Team Tracker",
-        description: "This program uses the inquirer cli to create an html file contain all team members roles and managers",
-        image: "./assets/images/teamTracker.png",
-        deployedUrl: "https://brantleymorris.github.io/TeamTracker/",
-        gitHubUrl: "https://github.com/brantleymorris/TeamTracker/tree/main"
-        },
         {title: "Burger Hunter",
         description: "This programs uses the handlebars framework and a SQL database to store and display the burgers that a user wants to eat and has eaten.",
         image: "./assets/images/burgerHunter.png",
         deployedUrl: "https://obscure-ocean-89115.herokuapp.com/",
         gitHubUrl: "https://github.com/brantleymorris/Burger_Hunter"
         }
+
     ];
 
 // create functions

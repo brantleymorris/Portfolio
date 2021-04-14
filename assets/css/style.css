@@ -129,8 +129,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /*background-color: darkcyan;*/
-    height: 50px;
+    background-color: darkcyan;
+    height: 75px;
 }
 
 /*This is for using images as buttons to display information about future projects*/
