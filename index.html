@@ -3,55 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/> 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Brantley Morris</title>
+    <title>Brantley Morris Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <script src="https://kit.fontawesome.com/99a1416109.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="bg">
-        <header> <!--Main Header, probably should be <header>-->
-            <h1>Brantley Morris</h1>
+    <header>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I'm <strong>Brantley Morris</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            full-stack dev
+        </p>
+        <img src="images/BrantleyMorris.jpeg" alt="Brantley smiling" class="intro__img">
+    </section>
 
-            <nav>
-                <a id="aboutMeNav" href="#aboutMe">About Me</a> <!--May need to be an <a> so that it can link to later in the page-->
-
-                <a id="projectsNav" href="#projects">Projects</a>
-
-                <a id="contactNav" href="#contact">Contact</a>
-            </nav>  
-        </header>
-        
-        <div id="aboutMe"> <!--may call this main, for About Me-->
-            <h2>Bootcamp is done, but learning never is.</h2>
-        
-            <img src="./assets/images/BrantleyMorris.jpeg" alt="Brantley Morris" id="meAndClaire"> <!--add picture here (not really sure that this is professional)-->
-
-            <p>A Full Stack web developer focused on streamlined data pathways and intuitive user experiences.</p>
-
-            <p>I recently earned a certificate in full stack web development with focus on the MongoDB, Express, React, and Node stack from the University of Texas Austin.
-                My aim is to create an uninterrupted experience by writing code optimized to balance processing time and data storage.
-                I am excited to continue developing technical skills while contributing to a fast-paced and quality-driven team.</p>
+    <!-- What I do -->
+    <section class="section__services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Front-End Design</h3>
+                <p>Create easy to navigate and enjoyalbe user experiences. I love putting myself in the users shoes to create pages that work intuitively.</p>
+            </div>
+            <div class="service">
+                <h3>Back-End Development</h3>
+                <p>Writing fast and efficient data pathways is my passion. If I do it right the user should not even know there is a back-end.</p>
+            </div>
+            <div class="service">
+                <h3>Database Management</h3>
+                <p>Customizing data structure tie webpages together. Attention to detail and proper planning make a data structure more reliable in the long run.</p>
+            </div>
         </div>
 
-        <div id="projects"> <!--this is for projects-->
-            <section class="images"></section>
+        <!-- internal link to work, might take off?-->
+        <a href="#work" class="btn">My Work</a>
+    </section>
 
-            <section class="descriptions"> <!--for project descriptions, will be set to show when corrisponding image is focused-->
-                <h2>Click an image to view project details.</h2>
-            </section>
+    <!-- About Me -->
+    <section class="section__about" id="about">
+        <h2 class="section__title section__title--about">About me</h2>
+        <p class="section__subtitle section__subtitle--about">It's the little things</p>
+
+        <div class="about-me__body">
+            <p>Full Stack web developer focused on streamlined data pathways and intuitive user experiences. I recently earned a certificate in full stack web development with focus on the MongoDB, Express, React, and Node stack from the University of Texas at Austin. Known for concise and through communication and streamlined code centered in best practices. My goal is to create uninterrupted experiences by writing code optimized to balance processing time and data storage. Most recently worked on a four person team to create a website where users can create take quizzes.</p>
+            <p>I am excited to continue developing technical skills while contributing to a fast-paced and quality-driven team.</p>
         </div>
 
-        <footer id="contact"> <!--this is for contact info-->
-            <p>Phone: <br/>(512) 433-9503</p> <!-- this needs to come out-->
-            <p>Email: <br/>brantleymorris@me.com</p> <!-- consider creating new email just for this page, or a submition form (check slack for what Daniel sent out) -->
-            <p>GitHub: <br/>brantleymorris</p>
-        </footer>
+        <!-- Update when I decide on new image -->
+        <img src="images/BrantleyMorris.jpeg" alt="some other pic of me" class="about__img">
+    </section>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="./assets/javascript/script.js"></script>
-    </div>
+    <!-- My Work-->
+    <!-- cards with title, picture, links, and description-->
+    <section class="section__work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work"></p>
+
+        <div class="portfolio">
+            <!-- Project item 1-->
+            <div class="portfolio__item">
+                <h3 class="item__title">Google Book Search</h3>
+                <a href="https://hidden-meadow-75616.herokuapp.com/" class="portfolio__link" target="_blank">
+                    <img src="images/BookSearch.png" alt="Picture of Google Book Search landing page." class="portfolio__img">
+                </a>
+                <p class="item__description">With the power of React and MongoDB you will never loss track of your reading list again. Using the Google Books API find the exact book you want to read. Then save it for later. And when you finish a book delete it for your list.</p>
+            </div>
+            
+            <!-- Project item 2-->
+            <div class="portfolio__item">
+                <h3 class="item__title">QuizNode</h3>
+                <a href="https://qu1znode.herokuapp.com/" class="portfolio__link" target="_blank">
+                    <img src="images/QuizNode.png" alt="Picture of QuizNode landing page." class="portfolio__img">
+                </a>
+                <p class="item__description">A M.E.R.N application that allows users to create and take quizzes that utilizes a non-sequential database to store user data.</p>
+            </div>
+
+            <!-- Project item 3-->
+            <div class="portfolio__item">
+                <h3 class="item__title">Weather Dashboard</h3>
+                <a href="https://brantleymorris.github.io/Weather_Tracker/" class="portfolio__link" target="_blank">
+                    <img src="images/WeatherTracker.png" alt="Picture of Weather Dashboard landing page." class="portfolio__img">
+                </a>
+                <p class="item__description">Get the current and 5 day weather forcast for any US city. Help plan trips or just see what is happening outside using a weather API.</p>
+            </div>            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:brantleymorris@me.com" class="footer__link">brantleymorris@me.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/brantleymorris" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/brantleymorris/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>
