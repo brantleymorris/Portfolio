@@ -1,1 +1,0 @@
-Be sure to include reset.css in acknoledgements
